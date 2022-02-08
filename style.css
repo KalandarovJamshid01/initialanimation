@@ -1,0 +1,122 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 5px solid green;
+  width: 40vw;
+  height: 45vh;
+  border-radius: 30px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  animation-name: cont;
+  animation-duration: 1.5s;
+  animation-delay: 10s;
+  animation-fill-mode: backwards;
+}
+.big {
+  width: 30%;
+  border-radius: 15px;
+  background-color: rgb(1, 172, 1);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation-name: bir;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+}
+.one {
+  animation-delay: 1s;
+}
+.two {
+  animation-delay: 2s;
+}
+.three {
+  animation-delay: 3s;
+}
+.head {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+  animation-name: heading;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+}
+.four {
+  animation-delay: 4s;
+}
+.five {
+  animation-delay: 5s;
+}
+.six {
+  animation-delay: 6s;
+}
+
+.litle {
+  width: 60%;
+  height: 60%;
+  background-color: rgb(123, 253, 253);
+  align-self: flex-end;
+  animation-name: btm;
+  animation-duration: 0.7s;
+  animation-fill-mode: backwards;
+}
+.seven {
+  animation-delay: 7s;
+}
+.eight {
+  animation-delay: 8s;
+}
+.nine {
+  animation-delay: 9s;
+}
+@keyframes bir {
+  0% {
+    opacity: 0%;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes heading {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes btm {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes cont {
+  0% {
+    border: 0px solid rgba(0, 128, 0, 0);
+  }
+  100% {
+    border: 5px solid green;
+  }
+}
